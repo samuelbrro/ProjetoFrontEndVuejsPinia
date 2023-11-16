@@ -17,14 +17,13 @@ const counter = useCounterStore();
       <h1>Cadastra-se aqui</h1>
 
       <label>
-        <span>Coloque seu email</span>
-        <input type="email" name="email" /><input />
+        <p>Nome Completo</p>
+        <input type="name" name="name" />
       </label>
-
       <label>
-        <span>Coloque sua senha</span>
-        <input type="password" name="password" /><input />
-      </label>
+        <p>Coloque sua senha</p>
+        <input type="password" name="password" /> </label
+      ><br />
 
       <button class="submit" type="button">Cadastrar-se</button>
     </form>
@@ -33,22 +32,22 @@ const counter = useCounterStore();
   <!--Form para acessar mas sem validação-->
   <div class="segunda">
     <form class="form">
-      <h1>Tela de login</h1>
+      <h1>Login</h1>
 
       <label>
-        <span>Coloque seu email</span>
-        <input type="email" name="email" /><input />
+        <p>Coloque seu email</p>
+        <input type="email" name="email" />
       </label>
 
       <label>
-        <span>Coloque sua senha</span>
-        <input type="password" name="password" /><input />
-      </label>
+        <p>Coloque sua senha</p>
+        <input type="password" name="password" /> </label
+      ><br />
 
-      <button class="submit" type="button">Cadastrar-se</button>
+      <button class="submit" type="button">Acessar</button>
     </form>
   </div>
-  <h2>Bem vindo ao sistema de login - abaixo incremente valores</h2>
+  <h2>Bem vindo ao sistema - abaixo incremente valores</h2>
   {{ counter.showCount }}
 
   <button @click="counter.increment">Aumentar</button>
@@ -62,14 +61,15 @@ const counter = useCounterStore();
   background: #fff;
   box-shadow: 0 19px 38px black, 0 15px 12px rgba(0, 0, 0, 0.22);
   border-radius: 25px;
-  widows: 40%;
+  width: 40%;
 }
 
 .segunda {
   display: inline-block;
   background: #fff;
-  box-shadow: 0 19px 38px black, 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px purple, 0 15px 12px rgba(0, 0, 0, 0.22);
   border-radius: 25px;
+  width: 50%;
   margin-left: 30px;
 }
 
@@ -78,12 +78,25 @@ button {
   border: none;
   outline: none;
   background: none;
+  margin: 0 15px;
 }
 
 h1 {
   color: black;
   padding-top: 10px;
   font-size: 30px;
+  display: inline-block;
+  position: center;
+  align-items: center;
+}
+
+h2 {
+  color: black;
+  padding-top: 10px;
+  font-size: 30px;
+  display: inline-block;
+  position: center;
+  align-items: center;
 }
 
 .form {
@@ -99,6 +112,7 @@ label {
   width: 260px;
   margin: 25px auto 0;
   text-align: center;
+  
 }
 button {
   padding: 15px 25px;
@@ -121,12 +135,26 @@ button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+  position: relative;
 }
 
-label span {
+label p {
   font-size: 14px;
   font-weight: 600;
   color: #505f75;
   text-transform: uppercase;
+  align-items: center;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+  text-align: center;
+  font-family: "Nunito", sans-serif;
 }
 </style>
