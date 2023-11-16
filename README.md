@@ -1,24 +1,10 @@
-# projetofrontendvue
+# Projeto Vue.Js 3 - Projetofrontendvue 
 
-## Project setup
-```
-npm install
-```
+Criação de um sistema de login e cadastro de clientes com Vue.js, Pinia para controle de estados,
+Nuxt, Vite e SCSS para estilização da aplicação, sistema ainda no começo do desenvolvimeto.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Espero agregar de alguma forma com esse projeto caso alguém queira clonar e estudar mais a fundo
+sobre o Framework utilizando o Pinia, fique a vontade.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Obrigado pela Leitura.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
